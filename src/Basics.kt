@@ -1,14 +1,14 @@
 // We create variables with (val) instead of (var) because values wont change
 // val is like const from JS.
-val add: String = "+"
-val subtrac = "-"
-val multiply = "*"
-val divide = "/"
+const val add: String = "+"
+const val subtrac = "-"
+const val multiply = "*"
+const val divide = "/"
 
-val ERROR_MESSAGE = "An error has occurred."
+const val ERROR_MESSAGE = "An error has occurred."
 
-val testOperandOne: Double = 5.0
-val testOperandtwo = 4.0
+const val testOperandOne: Double = 5.0
+const val testOperandTwo = 4.0
 
 fun main(args: Array<String>) {
     val operatorSymbol = args[0]
@@ -18,7 +18,7 @@ fun main(args: Array<String>) {
 // whenever we pass parameter we need to define the type of the parameter
 fun start(operatorSymbol: String) {
     if(checkArguments(operatorSymbol)) {
-        val getResultValue = evaluateBinomial(testOperandOne, testOperandtwo, operatorSymbol)
+        val getResultValue = evaluateBinomial(testOperandOne, testOperandTwo, operatorSymbol)
         displayResult(getResultValue)
     } else {
         println(ERROR_MESSAGE)
